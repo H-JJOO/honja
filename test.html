@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
+    <meta charset='UTF-8'>
     <title></title>
     <script>
 
-       const input = prompt('hello', '_world')
+       const rawInput = prompt('inch 단위의 숫자를 입력해주세요.')
 
-       alert(input)
+       const inch = Number(rawInput)
+       const cm = inch * 2.54
 
+       alert(`${inch}inch는 ${cm}cm 입니다.`)
 
     </script>
 </head>
