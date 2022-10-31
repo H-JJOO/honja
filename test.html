@@ -5,12 +5,13 @@
     <title></title>
     <script>
 
-       const rawInput = prompt('inch 단위의 숫자를 입력해주세요.')
+       const rInput = prompt('반지름을 입력해주세요.');
 
-       const inch = Number(rawInput)
-       const cm = inch * 2.54
+       const r = Number(rInput);
+       const area = 3.14 * r * r;
+       const round = 2 * 3.14 * r;
 
-       alert(`${inch}inch는 ${cm}cm 입니다.`)
+       alert(`반지름 ${r} cm 의 넓이는 ${area} 제곱센치, 둘레는 ${round} cm 입니다.`)
 
     </script>
 </head>
