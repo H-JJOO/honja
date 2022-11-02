@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-2</title>
+    <script>
+        const todos = ['아침먹기', '점심먹기', '저녁먹기']
+
+        // for in 반복문
+        // for (const i in todos) {
+        //
+        //     console.log(`${Number(1) + Number(i)}번째 할 일: ${todos[i]}`)
+        // }
+
+        // for of 반복문
+        // for (const todo of todos) {
+        //     console.log(`오늘의 할 일 : ${todo}`)
+        // }
+
+        // for 반복문
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(`${i + 1}번째 반복문 입니다.`)
+        // }
+
+        // 1 ~ 100 더하기 반복문
+        // let outPut = 0;
+        // for (let i = 1; i <= 100; i++) {
+        //     outPut += i
+        // }
+        // console.log(outPut)
+
+        // 1 ~ 100 곱하기 반복문
+        // let outPut = 1
+        // for (let i = 1; i <= 100; i++) {
+        //     outPut *= i
+        // }
+        // console.log(outPut)
+
+        // while 문
+        // let i = 0
+        // while (confirm('계속 진행할래?')) {
+        //     alert(`${i + 1}번째 반복문입니다.`)
+        //     i++
+        // }
+
+        // for 문 break
+        // for (let i = 1; true; i++) {
+        //     alert(i + '번째 반복문입닞다.')
+        //
+        //     const isContinue = confirm('계속하실꺼?')
+        //     if (!isContinue) {
+        //         break
+        //     }
+        // }
+        //
+        // alert('프로그램 종료')
+
+
+        // for 문 continue
+        // let outPut = 0
+        //
+        // for (let i = 0; i <= 10; i++) {
+        //     if (i % 2 === 1) {
+        //         continue
+        //     } else {
+        //         outPut += i
+        //     }
+        // }
+        //
+        // console.log(outPut)
+
+        //!! 피라미드 !!
+        // let outPut = ''
+        //
+        // for (let i = 1; i < 10; i++) {
+        //     for (let j = 1; j < i; j++) {
+        //         outPut += '*'
+        //     }
+        //     outPut += '\n'
+        // }
+        // console.log(outPut)
+
+        //!! 파라미드 고급!!
+        // let outPut = ''
+        //
+        // for (let i = 1; i < 15; i++) {
+        //     for (let j = 15; j > i; j--) {
+        //         outPut += ' '
+        //     }
+        //     for (let k = 0; k < 2 * i - 1; k++) {
+        //         outPut += '*'
+        //     }
+        //     outPut += '\n'
+        // }
+        //
+        // console.log(outPut)
+
+        // 4-2-2 문제
+        // const array = []
+        // for (let i = 0; i < 3; i++) {
+        //     array.push((i + 1) * 3)
+        // }
+        // console.log(array)
+
+        // 4-2-4 문제 피라미드 아니고 다이야
+        let outPut = ''
+        const size = 5
+
+        for (let i = 1; i <= size; i++) {
+            for (let j = size; j > i; j--) {
+                outPut += ' '
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                outPut += '*'
+            }
+            outPut += '\n'
+        }
+
+        for (let i = size - 1; i > 0; i--) {
+            for (let j = size; j > i; j--) {
+                outPut += ' '
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                outPut += '*'
+            }
+            outPut += '\n'
+        }
+
+        console.log(outPut)
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

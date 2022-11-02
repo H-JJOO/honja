@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-2</title>
+    <script>
+        // const rawInput = prompt('태어난 해를 입력해주세요', '')
+        //
+        // const year = Number(rawInput)
+        //
+        // const tti = '원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양'.split(',')
+        //
+        // alert(`${year}년에 태어났다면 ${tti[year % 12]} 띠 입니다.`)
+        //
+        // const result = (100 > 200) ? prompt('값을 입력해주세요', '') : confirm('버튼을 클릭해주세요.')
+        //
+        // alert(result)
+
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+
+        const year = Number(rawInput)
+
+        const e = year % 12
+
+        let result
+
+        switch (e) {
+            case 0 :
+                result = `${year}년생은 원숭이띠 입니다.`
+                alert(result)
+                break
+            case 1 :
+                result = `${year}년생은 닭띠 입니다.`
+                alert(result)
+                break
+            case 2 :
+                result = `${year}년생은 개띠 입니다.`
+                alert(result)
+                break
+            case 3 :
+                result = `${year}년생은 돼지띠 입니다.`
+                alert(result)
+                break
+            case 4 :
+                result = `${year}년생은 쥐띠 입니다.`
+                alert(result)
+                break
+            case 5 :
+                result = `${year}년생은 소띠 입니다.`
+                alert(result)
+                break
+            case 6 :
+                result = `${year}년생은 호랑이띠 입니다.`
+                alert(result)
+               break
+            case 7 :
+                result = `${year}년생은 토끼띠 입니다.`
+                alert(result)
+                break
+            case 8 :
+                result = `${year}년생은 용따 입니다.`
+                alert(result)
+                break
+            case 9 :
+                result = `${year}년생은 뱀띠 입니다.`
+                alert(result)
+                break
+            case 10 :
+                result = `${year}년생은 말띠 입니다.`
+                alert(result)
+                break
+            case 11 :
+                result = `${year}년생은 양띠 입니다.`
+                alert(result)
+                break
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
