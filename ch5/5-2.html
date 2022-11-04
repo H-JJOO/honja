@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5-2</title>
+    <script>
+        // // 함수 선언
+        // function callThreeTimes (callback) {
+        //     for (let i = 0; i < 3; i++) {
+        //         callback(i) // -> callback 이라는 매개변수는 함수이므로 호출 가능
+        //     }
+        // }
+        //
+        // function print (i) {
+        //     console.log(`${i}번째 함수 호출`)
+        // }
+        //
+        // // 함수 호출
+        // callThreeTimes(print)
+
+        // // 함수 선언
+        // function callThreeTimes (callback) {
+        //     for (let i = 0; i < 3; i++) {
+        //         callback(i) // -> callback 이라는 매개변수는 함수이므로 호출 가능
+        //     }
+        // }
+        //
+        // // 함수 호출
+        // callThreeTimes(function (i) {
+        //     console.log(`${i}번째 함수 호출`)
+        // })
+
+        //콜백 함수를 사용하는 forEach()
+        // function (value, index, array) {}
+
+        // // 배열의 forEach() 메소드
+        // const numbers = [273, 52, 103, 32, 57]
+        //
+        // numbers.forEach(function (value, index, array) {
+        //     console.log(`${index}번째 요소 : ${value}`)
+        // })
+
+        // 콜백 함수를 사용하는 map()
+
+        // // 배열을 선언
+        // let numbers = [273, 52, 103, 32, 57]
+        //
+        // // 배열의 모든 값을 제곱
+        // numbers = numbers.map(function (value, index, array) {
+        //     return value * value
+        // })
+        //
+        // // 출력
+        // numbers.forEach(console.log)
+
+        // // 콜백 함수를 활용하는 filter()
+        //
+        // const numbers = [0,1,2,3,4,5]
+        // const evenNumbers = numbers.filter(function (value) {
+        //     return value % 2 === 0
+        // })
+        //
+        // console.log(`원래 배열 : ${numbers}`)
+        // console.log(`짝수 배열 : ${evenNumbers}`)
+
+        // 화살표 함수
+
+        // (매개변수) => {
+        //
+        // }
+
+        // (매개변수) => 리턴값
+
+        // 콜백 함수를 사용하는 map()
+
+        // // 배열을 선언
+        // let numbers = [273, 52, 103, 32, 57]
+        //
+        // // 배열의 모든 값을 제곱
+        // numbers = numbers.map(function (value, index, array) {
+        //     return value * value
+        // })
+        //
+        // // 출력
+        // numbers.forEach(console.log)
+
+        // const array = [0,1,2,3,4,5,6,7,8]
+        //
+        // console.log(array.map((value) => value * value))
+
+        // 배열의 메소드와 화살표 함수
+
+        // // 배열 선언
+        // let numbers = [0,1,2,3,4,5,6,7,8,9]
+        //
+        // // 배열의 메소드를 연속적으으로 사용
+        // numbers
+        //         .filter((value) => value % 2 === 0)
+        //         .map((value) => value * value)
+        //         .forEach((value) => {
+        //             console.log(value)
+        //         })
+
+        // 메소드 체이닝 : 어떤 메소드가 리턴하는 값을 기반으로 해서 함수를 줄줄이 사용하는 것
+
+        // // 타이머 함수
+        // setTimeout(함수, 시간) // 특정 시간 후에 함수를 한 번 호출
+        // setInterval(함수, 시간) // 특정 시간마다 함수를 호출
+
+        // setTimeout(() => {
+        //     console.log('1초 후에 실행')
+        // }, 1 * 1000)
+        //
+        // let count = 1
+        // setInterval(() => {
+        //     console.log(`1초마다 실행(${count}번째)`)
+        //     count++
+        // }, 1 * 1000)
+
+        // 타이머 종료
+        // clearTimeout(타이머_ID) // setTimeout() 함수로 설정한 타이머를 제거
+        // clearInterval(타이머_ID) // setInterval() 함수로 설정한 타이머를 제거
+
+        // 타이머 ID : setTimeout() 함수와 setInterval() 함수를 호출할 때 리턴값으로 나오는 숫자
+
+        // let id
+        // let count = 1
+        // id = setInterval(() => {
+        //     console.log(`1초마다 실행됩니다(${count}번째)`)
+        //     count++
+        // }, 1 * 1000)
+        //
+        // setTimeout(() => {
+        //     console.log('타이머를 종료합니다.')
+        //     clearTimeout(id)
+        // }, 5 * 1000)
+
+        // 함수 즉시 호출하기
+        // (function () {})()
+
+        // 스코프(scope) : 변수가 존재하는 범위
+
+        // 섀도잉(shadowing) : 블록이 다른 경우 내부 변수가 외부 변수를 가리키는 현상
+
+        // 엄격 모드
+
+        // 'use strict'
+        // 문장
+        // 문장
+
+        // 'use strict'
+        // data = 10
+        // console.log(data)
+
+        // 익명함수 : 순차적인 코드 실행에서 코드가 해당 줄을 읽을 때 생성
+
+        // // 변수를 선언
+        // let 익명함수
+        //
+        // // 익명 함수를 2번 생성
+        // 익명함수 = function () {
+        //     console.log('1번째 익명 함수입니다.')
+        // }
+        // 익명함수 = function () {
+        //     console.log('2번째 익명 함수입니다.')
+        // }
+        //
+        // // 익명 함수 호출
+        // 익명함수()
+
+        // 선언적 함수 : 순차적인 코드가 실행이 일어나기 전에 생성
+
+        // // 선언적 함수 호출
+        // 선언적함수() // -> 선언적 함수를 생성하는 코드 앞에 입력
+        //
+        // // 선언적 함수를 2번 생성
+        // function 선언적함수 () {
+        //     console.log('1번째 선언적 함수')
+        // }
+        // function 선언적함수 () {
+        //     console.log('2번째 선언적 함수')
+        // }
+
+        // 선언적 함수와 익명 함수의 조합
+
+        // // 익명 함수를 생성
+        // 함수 = function () {
+        //     console.log('익명 함수 입니다.')
+        // }
+        //
+        // // 선언적 함수를 생성 후 할당
+        // function 함수 () {
+        //     console.log('선언적 함수 입니다.')
+        // }
+        //
+        // // 함수 호출
+        // 함수()
+
+        // 결론 : 안전하게 사용할 수 있는 익명 함수를 더 선호
+
+        // 블록이 다른 경우에 선언적 함수의 사용
+
+        // 결론 : 비교적 안전한 익명 함수를 사용하고, var 쓰지말고 let, const 써라라
+
+    <script>
+<!--    <script>-->
+<!--        //(1) 즉시 호출 함수를 사용한 문제 해결-->
+<!--        let pi = 3.14-->
+<!--        console.log(`파이 값음 ${pi}입니다.`)-->
+<!--    </script>-->
+<!--    <script>-->
+<!--        (function () {-->
+<!--            let pi = 3.141592-->
+<!--            console.log(`파이 값은 ${pi}입니다`)-->
+<!--        })()-->
+<!--    </script>-->
+    <script>
+        //(2)
+        선언적함수()
+
+        function 선언적함수 () {
+            console.log('1번째 선언적 함수입니다.')
+        }
+    </script>
+    <script>
+        function 선언적함수 () {
+            console.log('2번째 선언적 함수입니다.')
+        }
+    </script>
+    <script>
+        선언적함수()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

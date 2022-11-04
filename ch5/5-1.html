@@ -33,7 +33,11 @@
         //
         // isLeepYear(ansYear)
         //
-        // alert(isLeepYear(ansYear))
+        // if (isLeepYear(ansYear)) {
+        //     alert(`${ansYear}년은 윤년입니다.`)
+        // } else {
+        //     alert(`${ansYear}년은 윤년이 아닙니다.`)
+        // }
 
         //A부터 B까지 더하는 함수 (?)
         // function sumAll(a, b) {
@@ -118,20 +122,20 @@
         // 함수 이름(매개변수, 매개변수=기본값, 매개변수=기본값)
         // function sample(a=기본값, b) {}
 
-        // function earnings (name, wage=8950, hours=40) {
-        //     console.log(`# ${name} 님의 급여 정보`)
-        //     console.log(`- 시급 : ${wage}원`)
-        //     console.log(`- 근무 시간 : ${hours}시간`)
-        //     console.log(`- 급여 : ${wage * hours}원`)
-        //     console.log('')
-        //
-        // }
-        //
-        // earnings('철수')
-        //
-        // earnings('영희', 10000)
-        //
-        // earnings('맹구', 11000, 50)
+        function earnings (name, wage=8950, hours=40) {
+            console.log(`# ${name} 님의 급여 정보`)
+            console.log(`- 시급 : ${wage}원`)
+            console.log(`- 근무 시간 : ${hours}시간`)
+            console.log(`- 급여 : ${wage * hours}원`)
+            console.log('')
+
+        }
+
+        earnings('철수')
+
+        earnings('영희', 10000)
+
+        earnings('맹구', 11000, 50)
 
         //5-1-1문제
 
@@ -175,28 +179,28 @@
         // console.log(max([1,2,3,4]))
 
         //5-1-2-3
-        const max = function (first, ...rests) {
-            let output
-            let items
-
-            if (Array.isArray(first)) {
-                output = first[0]
-                items = first
-            } else if (typeof(first) === 'number') {
-                output = first
-                items = rests
-            }
-
-            for (const data of items) {
-                if (output < data) {
-                    output = data
-                }
-            }
-            return output
-        }
-
-        console.log(`max(배열): ${max([1,2,3,4])}`)
-        console.log(`max(숫자, ...): ${max([1,2,3,4])}`)
+        // const max = function (first, ...rests) {
+        //     let output
+        //     let items
+        //
+        //     if (Array.isArray(first)) {
+        //         output = first[0]
+        //         items = first
+        //     } else if (typeof(first) === 'number') {
+        //         output = first
+        //         items = rests
+        //     }
+        //
+        //     for (const data of items) {
+        //         if (output < data) {
+        //             output = data
+        //         }
+        //     }
+        //     return output
+        // }
+        //
+        // console.log(`max(배열): ${max([1,2,3,4])}`)
+        // console.log(`max(숫자, ...): ${max([1,2,3,4])}`)
 
 
 
