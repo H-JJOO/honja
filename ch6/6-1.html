@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6-1</title>
+    <script>
+
+        // // 메소드 내부에서의 this 메소드
+        //
+        // // 변수선언
+        // const pet = {
+        //     name: '구름',
+        //     eat: function (food) {
+        //         alert(this.name + '은/는 ' + food + '을/를 먹습니다.')
+        //     }
+        // }
+        //
+        // // 메소드 호출
+        // pet.eat('밥')
+
+        // // 동적으로 객체 속성 추가하기
+        //
+        // // 객체 선언
+        // const student = {}
+        // student.이름 = '주현진'
+        // student.취미 = '코딩(?)'
+        // student.장래희망 = '성장하는 개발자'
+        //
+        // // 출력
+        // console.log(JSON.stringify(student, null, 2))
+
+        // // 동적으로 객체 속성 제거하기
+        //
+        // // 객체 선언
+        // const student = {}
+        // student.이름 = '주현진'
+        // student.취미 = '코딩(?)'
+        // student.장래희망 = '성장하는 개발자'
+        //
+        // // 객체 속성 제거
+        // delete student.장래희망
+        //
+        // // 출력
+        // console.log(JSON.stringify(student, null, 2))
+
+        const pet = {
+            name: '구름',
+            eat (food) { //     eat: function (food) {
+                alert(this.name + '은/는 ' + food + '을/를 먹습니다.')
+            }
+        }
+
+        // 메소드 호출
+        pet.eat('밥')
+
+
+
+    </script>
+</head>
+<body>
+
+</body>`
+</html>
