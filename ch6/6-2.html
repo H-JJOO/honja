@@ -48,7 +48,99 @@
         //
         // console.log(l.toFixed(4))
 
-        ////// 일단 여기까지 나머지 내일 p269 String 객체부터
+        // String 객체
+
+        // // trim() : 문자열 양쪽 끝의 공백 없애기
+        //
+        // const a = "  예시  "
+        //
+        // console.log(a)
+        //
+        // console.log(a.trim())
+
+        // // split() : 문자열을 특정 기호로 자르기
+        //
+        // const email = "icepri3535@gmail.com"
+        //
+        // console.log(email.split('@'))
+
+        // // JSON 객체 (JavaScript Object Notation)
+        // // 인터넷에서 문자열로 데이터를 주고 받을 때 사용하는 자료 표현 방식 중 하나
+        //
+        // {
+        //     "name": "주현진",
+        //     "age": 30,
+        //     "gender": "man"
+        // }
+
+        // - 값을 표현할 때는 문자열, 숫자, 불 자료형만 사용할 수 있다. (함수 등은 사용 불가)
+        // - 문자열은 반드시 큰따옴표로 만들어야 한다.
+        // - key 에도 반드시 따옴표를 붙여야 한다.
+
+        // JSON.stringify() : 자바스크립트 객체를 JSON 문자열로 변환할 때 사용
+
+        // // JSON.stringify() 메소드
+        //
+        // // 자료 생성
+        // const data = [{
+        //     name: '주현진',
+        //     age: 30,
+        //     gender: 'man'
+        // }, {
+        //     name: '서유미',
+        //     age: 30,
+        //     gender: 'woman'
+        // }]
+        //
+        // // JSON 으로 변환
+        // console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data, null, 2))
+
+        // JSON.parsex() : JSON 문자열을 자바스크립트 객체로 전개할 때 사용
+
+        // // JSON.parse() 메소드
+        //
+        // // 자료 생성
+        // const data = [{
+        //     name: '주현진',
+        //     age: 30,
+        //     gender: 'man'
+        // }, {
+        //     name: '서유미',
+        //     age: 30,
+        //     gender: 'woman'
+        // }]
+        //
+        // // 자료를 JSON 형태로 변환
+        // const json = JSON.stringify(data)
+        // console.log(json)
+        //
+        // // JSON 문자열을 다시 자바스크립트 객체로 변환
+        // console.log(JSON.parse(json))
+
+        // Math 객체 : 수학과 관련된 기본적인 연산을 할때 사용하는 객체
+
+        // Math 객체 중 Math.random() : 0 이상 1 미만의 랜덤한 숫자를 생성
+
+        // // Math.random() 메소드
+        // const num = Math.random()
+        //
+        // console.log('# 랜덤 숫자')
+        // console.log('# 0~1 랜덤 숫자 : ' , num)
+        // console.log(' ')
+        //
+        // console.log('# 랜덤 정수')
+        // console.log('# 0~10 랜덤 정수 : ' , Math.floor(num * 10))
+        // console.log(' ')
+        //
+        // console.log('# 랜덤 정수')
+        // console.log('# -5~5 랜덤 정수 : ' , Math.floor(num * 10 - 5))
+        // console.log(' ')
+
+        // p280 Lodash 라이브러리 부터 진행
+
+
+
 
 
 
