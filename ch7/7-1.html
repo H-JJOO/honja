@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // //DOMContentLoaded : 웹 브라우저가 문서 객체를 모두 읽고 나서 실행하는 이벤트
+        // // DOMContentLoaded 이벤트 연결
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const h1 = (text) => `<h1>${text}</h1>`
+        //     document.body.innerHTML += h1('DOMContentLoaded 이벤트 발생')
+        // })
+
+        // 문서 객체 가져오기
+
+        // document.body 코드를 사용하면 문서의 body 요소를 읽어드릴 수 있다.
+        // document.head
+        // document.body
+        // document.title
+
+        // 내부 요소에 만든 다른 요소들 접근
+        // document.querySelector(선택자) : 요소를 하나만 추출
+        // document.querySelectorAll(선택자) : 문서 객체를 여러 개 추출
+
+        // 이름           선택자 형태                 설명
+        // 태그 선택자        태그           특정 태그를 가진 요소를 추출한다.
+        // 아이디 선택자     #아이디          특정 id 속성을 가진 요소를 추출한다.
+        // 클래스 선택자     .클래스          특정 class 속성을 가진 요소를 추출한다.
+        // 속성 선택자       [속성=값]       특정 속성 값을 갖고 있는 요소를 추출한다.
+        // 후손 손택자   선택자_A 선택자_B    선택자_A 아래에 있는 선택자_B를 선택합니다.
+
+        // 7-1-4 querySelector() 메소드
+        // 7-1-5 querySelectorAll() 메소드
+
+        // 글자 조작하기
+
+        // 속성 이름                   설명
+        // 문서 객체.textContent       입력된 문자열을 그대로 넣는다.
+        // 문서 객체.innerHTML         입력된 문자열을 HTML 형식으로 넣는다.
+
+        // 7-1-6 글자 조작하기
+
+        // 속성 조작하기
+
+        // 메소드 이름                                       설명
+        // 문서 객체.setAtrribute(속성 이름, 값)      특정 속성에 값을 지정한다.
+        // 문서 객체.getAttribute(속성 이름)          특정 속성을 추룰한다.
+
+        // 7-1-7 속성 조작하기
+
+        // 스타일 조작하기, 캐멀 케이스 기법으로
+
+        // CSS 속성 이름           자바스크립트 style 속성 이름
+        // background-color        backgroundColor
+        // text-align              textAlign
+        // font-size               fontSize
+
+        // h1.style.backgroundColor -> 이 형태를 가장 많이 사용
+        // h1.style['backgroundColor']
+        // h1.style['background-color']
+
+        // 7-1-8 스타일 조작하기
+
+        // 문서 객체 생성하기
+
+        // document.createElement() 메소드 사용
+
+        // document.createElement(문서 객체 이름)
+
+        // 그런데 문서 객체를 만들었다고 문서 객체가 배치되는 것은 아니다. 문서를 어떤 문서 아래에 추가 할지 지정해 줘야한다.
+        // 이러한 것을 프로그래밍에서는 트리(tree) 라고 부른다.
+        // 어떤 문서 객체가 있을 때 위에 있는 것을 부모(parent), 아래에 있는 것을 자식(child) 라고 부른다.
+
+        // 문서 객체에는 appendChild() 메소드가 있는데, 어떤 부모 객체 아래에 자식 객체를 추가 할 수 있다.
+
+        // 부모 객체.appendChild(자식 객체)
+
+        // 7-1-9 문서 객체 생성하고 추가하기
+
+        // 문서 객체 이동하기
+
+        // appendChild() 메소드는 문서 객체를 이동할 때도 사용
+
+        // 7-1-10 문서 객체 이동하기
+
+        // 문서 객체 제거하기
+
+        // removeChild() 메소드 사용
+
+        // 부모 객체.removeChild(자식 객체)
+
+        // appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 문서 객체의 경우 parentNode 속성으로 부모 객체에 접근할 수 있다
+
+        // 문서 객체.parentNode.removeChild(문서 객체)
+
+        // 7-1-11 문서 객체 제거하기
+
+        // 이벤트 설정하기
+
+        // 문서 객체.addEventListener(이벤트 이름, 콜백 함수)
+
+        // 이때 실행할 함수를 '이벤트 리스터' 또는 '이벤트 핸들러' 라고 부른다.
+
+        // 7-1-12 이벤트 연결하기
+
+        // 이벤트 제거하기
+
+        // 문서 객체.removeRventListener(이벤트 이름, 이벤트 리스너)
+
+        // 7-1-13 이벤트 제거하기
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>

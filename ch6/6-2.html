@@ -139,6 +139,23 @@
 
         // p280 Lodash 라이브러리 부터 진행
 
+        // 6-2-2
+        function printLang(code) {
+            return printLang._lang[code]
+        }
+
+        printLang._lang = {
+            ko: '한국어',
+            en: '영어',
+            ja: '일본어',
+            fr: '프랑스어',
+            es: '스페인어'
+        }
+
+        console.log('printLang("ko"):', printLang('ko'))
+        console.log('printLang("en"):', printLang('en'))
+
+
 
 
 
