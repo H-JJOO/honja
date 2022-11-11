@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>라디오 버튼 사용해보기</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 문서 객체 추출하기
+            const output = document.querySelector('#output')
+            const radios = document.querySelectorAll('[name=fruit]')
+
+            // 모든 라디오 버튼에
+            radios.forEach((radio) => {
+                // 이벤트 연결
+                radio.addEventListener('change', (e) => {
+                    const current = e.currentTarget
+                    if (current.value === '기타') {
+                        output.textContent = `좋아하는 과일은 무엇인가요?`
+                    } else if (current.checked) {
+                        output.textContent = `좋아하는 과일은 ${current.value}이시군요!`
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h3># 좋아하는 과일을 선택해 주세요</h3>
+    <label>
+        <input type="radio" name="fruit" value="사과">
+        <span>사과</span>
+    </label>
+    <label>
+        <input type="radio" name="fruit" value="바나나">
+        <span>바나나</span>
+    </label>
+    <label>
+        <input type="radio" name="fruit" value="귤">
+        <span>귤</span>
+    </label>
+    <label>
+        <input type="radio" name="fruit" value="딸기">
+        <span>딸기</span>
+    </label>
+    <label>
+        <input type="radio" name="fruit" value="기타">
+        <span>기타</span>
+    </label>
+    <hr>
+    <h3 id="output"></h3>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 활용</title>
+    <script>
+        // 이벤트 모델 : 이벤트를 연결하는 방법
+
+        // 표준 이벤트 모델
+        document.addEventListener('keyup', () => {
+
+        })
+
+        // 고전 이벤트 모델
+        document.body.onkeyup = (e) => {
+
+        }
+
+        // 인라인 이벤트 모델
+        const listener = (e) => {
+
+        }
+
+        // 키보드 이벤트
+
+        // 1. keydown  : 키가 눌릴 때 실행, 꾹 누르고 있을 때도, 입력될 때도 실행
+        // 2. keypress : 키가 입력되어있을 때 실행, 웹 브라우저에 따라서 아시아권 문자를 제대로 처리 못할 때 있음
+        // 3. keyup    : 키보드에서 키가 떨어질 때 실행, 일반적으로 이거 사용
+
+        // 7-2-1 남은 글자 수 출력하기
+
+        // 키보드 키 코드 사용하기
+
+        // 이벤트 속성 이름            설명
+        //      code            입력한 키
+        //      keyCode         입력한 키를 나타내는 숫자
+        //      altKey          Alt 키를 눌렀는지
+        //      ctrlKey         Ctrl 키를 눌렀는지
+        //      shiftKey        Shift 키를 눌렀는지
+
+        // 7-2-2 키보드 이벤트와 관련된 이벹트 속성
+
+        // 7-2-3 키로 하트 움직이기
+
+        // 대기
+        // 이벤트 발생 객체, 이벤트 리스너를 외부로 빼낸 경우 7-2-4
+
+        // 첫번째, event.currentTarget 속성을 사용
+        // 두번째, this 키워드를 사용
+
+        // 글자 입력 양식 이벤트
+        // 입력 양식(form) : 사용자로부터 어떠한 입력을 받을 때 사용하는 요소 (input, textarea, button, select, 등등)
+
+        // 7-2-5 입력 양식을 기반으로 inch 를 cm 단위로 변환하는 프로그램
+
+        // 7-2-6 이메일 형식 확인하기
+
+        // 드롭다운 목록 활용하기
+
+        // select 태그로 구현
+
+        // 7-2-7 기본 select 태그
+
+        // 7-2-8 multiple select 태그
+
+        // 7-2-9 cm 단위를 여러 단위로 변환하는 프로그램
+
+        // 체크 박스 활용하기 checked 활용
+
+        // 7-2-10 체크 박스 활용하기 (체크 상태일 때만 타이머를 증가시키는 프로그램)
+        // change 이벤트가 발생했을 때 체크 박스의 체크 상태를 확인하고 setInterval() 함수 또는 clearInterval() 함수를 실행
+
+        // 라디오 버튼 활용하기
+        // 7-2-11 라디오 버튼 사용해보기
+
+        // 기본 이벤트 막기
+        // preventDefault() 메소드 사용
+        // 7-2-12 이미지 마우스 오른쪽 버튼 클릭 막기
+        // 불펌 방지
+
+        // 7-2-13 체크 때만 링크 활성화하기
+
+        // 7-2-14 할 일 목록 만들기
+
+        // 타이머로 구현한 남은 글자 수 세기
+        // 7-2-15 글자 수 출력하기
+
+        // localStorage 객체? : 웹 브라우저에 데이터를 저장하는 객체
+
+        // localStorage.getItem(키) : 저장된 값을 추룰, 없으면 undefined 나옴, 객체의 속성을 추출하는 일반적인 형태로 localStorage.키 또는 localStorage[키] 형태로 사용
+        // localStorage.setITem(키, 값) : 값을 저장, 전과 마찬가지로 객체에 속성을 저장하는 일반적인 형태 사용 가능
+        // localStorage.removeItem(키) : 특정 키의 값을 제거
+        // localStorage.clear() : 저장된 모든 값을 제거
+
+        // 7-2-16 웹 브러우저에 데이터를 저장하는 localStorage 객체와 활용하기
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body onkeyup="listener(e)">
+
+</body>
+</html>
