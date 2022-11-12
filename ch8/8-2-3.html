@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예외 강제로 발생시키기</title>
+    <script>
+        function test(object) {
+            console.log(object.a + object.b)
+        }
+
+        test({})
+
+        // 일반적인 프로그래밍 언어
+        // object 객체에 a, b 속성이 없으므로 예외 발생
+        // 존재하지 않는 object.a + object.b 도 예외 발생
+
+        // 자바스크립트
+        // object.a, object.b 둘다 undefined 로 나온다.
+        // undefined + undefined 는 NaN 이 나온다.
+        // 오류 없음
+    </script>
+</head>
+<body>
+
+</body>
+</html>
