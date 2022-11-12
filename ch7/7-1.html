@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        // //DOMContentLoaded : 웹 브라우저가 문서 객체를 모두 읽고 나서 실행하는 이벤트
-        // // DOMContentLoaded 이벤트 연결
-        // document.addEventListener('DOMContentLoaded', () => {
-        //     const h1 = (text) => `<h1>${text}</h1>`
-        //     document.body.innerHTML += h1('DOMContentLoaded 이벤트 발생')
-        // })
+        //DOMContentLoaded : 웹 브라우저가 문서 객체를 모두 읽고 나서 실행하는 이벤트
+        // DOMContentLoaded 이벤트 연결
+        document.addEventListener('DOMContentLoaded', () => {
+            const h1 = (text) => `<h1>${text}</h1>`
+            document.body.innerHTML += h1('DOMContentLoaded 이벤트 발생')
+        })
 
         // 문서 객체 가져오기
 
@@ -19,8 +19,8 @@
         // document.title
 
         // 내부 요소에 만든 다른 요소들 접근
-        // document.querySelector(선택자) : 요소를 하나만 추출
-        // document.querySelectorAll(선택자) : 문서 객체를 여러 개 추출
+        document.querySelector(선택자) // 요소를 하나만 추출
+        document.querySelectorAll(선택자) // 문서 객체를 여러 개 추출
 
         // 이름           선택자 형태                 설명
         // 태그 선택자        태그           특정 태그를 가진 요소를 추출한다.
