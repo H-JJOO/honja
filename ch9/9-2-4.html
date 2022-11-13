@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자가 음수 길이를 입력한 경우</title>
+    <script>
+        // 정사각형 클래스
+        class Square {
+            constructor(length) {
+                this.length = length
+            }
+            getPerimeter() {return 4 * this.length}
+            getArea() {return this.length * this.length}
+        }
+        // 클래스 사용하기
+        const square = new Square(-10)
+        console.log(`정사각형의 돌레 : ${square.getPerimeter()}`)
+        console.log(`정사각형의 넓이 : ${square.getArea()}`)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>길이에 음수가 들어가지 않게 수정하기</title>
+    <script>
+        // 정사각형 클래스
+        class Square {
+            constructor(length) {
+                if (length <= 0){
+                    throw '길이는 0 보다 커야합니다.'
+                }
+                this.length = length
+            }
+            getPerimeter() {return 4 * this.length}
+            getArea() {return this.length * this.length}
+        }
+        // 클래스 사용하기
+        const square = new Square(-10)
+        console.log(`정사각형의 돌레 : ${square.getPerimeter()}`)
+        console.log(`정사각형의 넓이 : ${square.getArea()}`)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
